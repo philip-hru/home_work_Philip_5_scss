@@ -1,0 +1,33 @@
+header {
+  @include flex-center;
+  justify-content: space-between;
+}
+
+.wrapper {
+  @include flex-center;
+  gap: 125px;
+}
+
+.social-networks {
+  @include flex-center;
+  gap: 15px;
+}
+
+.phone-number,
+i {
+  font-size: 21px;
+}
+
+i,
+a {
+  color: white;
+}
+
+a {
+  @include flex-center;
+  text-decoration: none;
+}
+/* это бургер меню */
+.fa-bars.fa-solid {
+  display: none;
+}

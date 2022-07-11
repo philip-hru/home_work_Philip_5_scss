@@ -1,0 +1,23 @@
+.hero-page {
+  /* margin: 140px 0 225px 0; */
+  height: 100vh;
+  @include flex-center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+
+  &__title {
+    max-width: 600px;
+    font-weight: 900;
+    font-size: 55px;
+
+    &--georgian {
+      color: $button_color;
+    }
+  }
+  &__text {
+    max-width: 450px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../image/background-img.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  padding: 0 100px;
+  /* санс для одной толщены букв */
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 125px;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.phone-number,
+i {
+  font-size: 21px;
+}
+
+i,
+a {
+  color: white;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+/* это бургер меню */
+.fa-bars.fa-solid {
+  display: none;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+ul li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero-page {
+  /* margin: 140px 0 225px 0; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+.hero-page__title {
+  max-width: 600px;
+  font-weight: 900;
+  font-size: 55px;
+}
+.hero-page__title--georgian {
+  color: #b82121;
+}
+.hero-page__text {
+  max-width: 450px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button {
+  background-color: #b82121;
+  border: none;
+  padding: 20px 49px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 900;
+  /* делает что бы кнопка не ростягивалась */
+  align-self: flex-start;
+}
+
+/* макс виз применятся когда окно уменьшается до этого размера */
+@media (max-width: 1370px) {
+  ul {
+    display: none;
+  }
+  body {
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/background-img.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+  }
+}
+@media (max-width: 635px) {
+  .hero-page__title {
+    text-align: center;
+    max-width: 100%;
+    font-size: 32px;
+  }
+  .hero-page__text {
+    max-width: 100%;
+    text-align: center;
+  }
+  button {
+    margin: 0 auto;
+  }
+  * {
+    margin: 0;
+  }
+  .wrapper {
+    width: 133px;
+    height: 70px;
+  }
+  .phone-number {
+    display: none;
+  }
+  .fa-bars.fa-solid {
+    display: inline;
+    font-size: 30px;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

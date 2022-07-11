@@ -1,0 +1,16 @@
+/* макс виз применятся когда окно уменьшается до этого размера */
+@media (max-width: 1370px) {
+  ul {
+    display: none;
+  }
+
+  body {
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../image/background-img.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+  }
+}
