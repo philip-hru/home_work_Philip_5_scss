@@ -31,3 +31,17 @@ a {
 .fa-bars.fa-solid {
   display: none;
 }
+@media (max-width: 635px) {
+  .wrapper {
+    width: 133px;
+    height: 70px;
+  }
+  .phone-number {
+    display: none;
+  }
+
+  .fa-bars.fa-solid {
+    display: inline;
+    font-size: 30px;
+  }
+}

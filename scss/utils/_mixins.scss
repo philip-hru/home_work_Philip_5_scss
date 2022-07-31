@@ -4,3 +4,8 @@
   align-items: center;
   flex-wrap: wrap;
 }
+@mixin flex($dir) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: center;
+}

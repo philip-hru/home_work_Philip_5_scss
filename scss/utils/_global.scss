@@ -1,0 +1,46 @@
+.tomato {
+  position: absolute;
+  background-image: url(../image/tomato.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: $tomato-width;
+  height: $tomato-width;
+  top: -70px;
+  left: -52px;
+}
+
+.basil {
+  position: absolute;
+  background-image: url("../image/bazil.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: $basil-width;
+  height: $basil-height;
+  bottom: 90px;
+  width: 100%;
+  background-position: right;
+}
+
+.onion {
+  position: absolute;
+  background-image: url(../image/onion.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 358px;
+  height: 323px;
+  top: 845px;
+  left: 48px;
+}
+@media (max-width: 585px) {
+  .tomato {
+    display: none;
+  }
+
+  .basil {
+    display: none;
+  }
+
+  .onion {
+    display: none;
+  }
+}

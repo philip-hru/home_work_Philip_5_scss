@@ -1,0 +1,14 @@
+.taste {
+  position: relative;
+  padding-bottom: 137px;
+
+  &__title {
+    padding-top: 121px;
+  }
+
+  &__btn {
+    width: fit-content;
+    margin: auto;
+    display: block;
+  }
+}

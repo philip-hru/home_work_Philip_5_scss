@@ -1,0 +1,119 @@
+.menu__section {
+  background-image: url(../image/back-ground-img2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  &-wrapper {
+    @include flex(row);
+    gap: 5px;
+  }
+  &__arow-left {
+    position: absolute;
+    top: 2238px;
+    z-index: 1;
+    left: 130px;
+    font-size: 26px;
+  }
+  &__arow-right {
+    position: absolute;
+    top: 2238px;
+    z-index: 1;
+    right: 130px;
+    font-size: 26px;
+  }
+  &__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    height: 508px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    flex-basis: 288px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      transition: 0.3s;
+    }
+
+    &:hover {
+      &::before {
+        content: unset;
+      }
+
+      .menu__section__item-button {
+        display: flex;
+      }
+    }
+
+    &-button {
+      background: rgba(0, 0, 0, 0.65);
+      border: 2px solid rgba(255, 255, 255, 0.6);
+      border-radius: 5px;
+      font-weight: 900;
+      font-size: 14px;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: none;
+      padding: 20px 55px;
+      color: $white;
+      margin: auto;
+    }
+
+    &-text {
+      font-weight: 800;
+      font-size: 24px;
+      position: absolute;
+      bottom: 10px;
+      line-height: 2.5;
+      width: 100%;
+      text-align: center;
+    }
+    &-text_4 {
+      font-size: 23px;
+    }
+  }
+}
+.section__item1 {
+  background-image: url(../image/menu_botom1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section__item2 {
+  background-image: url(../image/menu_botom2.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section__item3 {
+  background-image: url(../image/menu_botom3.png);
+}
+.section__item4 {
+  background-image: url(../image/menu_botom4.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.section__item5 {
+  background-image: url(../image/menu_botom5.jpeg);
+}
+.section__item6 {
+  background-image: url(../image/menu_botom6.jpeg);
+}
+
+@media (max-width: 585px) {
+  .menu__section-wrapper {
+    flex-wrap: wrap;
+  }
+  .menu__section__arow-left {
+    display: none;
+  }
+  .menu__section__arow-right {
+    display: none;
+  }
+}

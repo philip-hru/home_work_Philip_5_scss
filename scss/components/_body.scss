@@ -1,9 +1,31 @@
 body {
+  color: white;
+  background-color: #000000;
+  /* санс для одной толщены букв */
+  font-family: "Noto Sans", sans-serif;
+}
+.section_1 {
   background-image: url(../image/background-img.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  color: white;
   padding: 0 100px;
-  /* санс для одной толщены букв */
-  font-family: "Noto Sans", sans-serif;
+}
+.taste {
+  background-image: url(../image/back-ground-img2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* макс виз применятся когда окно уменьшается до этого размера */
+@media (max-width: 1370px) {
+  .section_1 {
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../image/background-img.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+  }
 }

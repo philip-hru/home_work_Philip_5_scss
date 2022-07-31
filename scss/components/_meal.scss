@@ -1,0 +1,35 @@
+.meal {
+  @include flex(row);
+  gap: 60px;
+  justify-content: center;
+  padding: 60px 0;
+  flex-wrap: wrap;
+
+  &__item {
+    position: relative;
+    max-width: 287px;
+  }
+
+  &__item-text {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  &__item-img {
+    position: relative;
+    width: 100%;
+  }
+
+  &__item-basil {
+    position: absolute;
+    background-image: url(../image/meal-item-bazil.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 205px;
+    top: -55px;
+    left: -35px;
+  }
+}

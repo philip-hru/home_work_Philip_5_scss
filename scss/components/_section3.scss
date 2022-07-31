@@ -1,0 +1,77 @@
+.section3 {
+  background-image: url(../image/back-ground-img2.png);
+  padding: 160px 0;
+
+  &_img--big {
+    width: 100%;
+  }
+
+  &__bazil--big {
+    background-image: url(../image/section3__bazil--big.png);
+    position: absolute;
+    background-size: cover;
+    right: 0;
+    width: 500px;
+    height: 390px;
+  }
+
+  &__img-tomato--small {
+    background-image: url(../image/section3__img-tomato--small.png);
+    width: 55px;
+    height: 55px;
+    left: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3425px;
+  }
+
+  &__img--bazil {
+    background-image: url(../image/section3__img--bazil.png);
+    position: absolute;
+    width: 216px;
+    height: 425px;
+    top: 2500px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: left;
+  }
+
+  &__title {
+    margin-top: 160px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: auto;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        max-width: 461px;
+        gap: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 585px) {
+  .section3__wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .section3__wrapper__left-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section3__img-tomato--small {
+    display: none;
+  }
+}

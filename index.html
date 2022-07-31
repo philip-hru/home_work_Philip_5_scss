@@ -23,53 +23,180 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <div class="logo">
-                <img src="./image/header-logo.png" alt="logo" class="logo__img">
+    <section class="section_1">
+        <header class="header">
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="./image/header-logo.png" alt="logo" class="logo__img">
+                </div>
+                <nav class="menu">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#">главная</a></li>
+                        <li class="menu__item"><a href="#">меню</a></li>
+                        <li class="menu__item"><a href="#">доствка</a></li>
+                        <li class="menu__item"><a href="#">контакты</a></li>
+                        <li class="menu__item"><a href="#">акции</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="menu">
-                <ul class="menu">
-                    <li class="menu__item"><a href="#">главная</a></li>
-                    <li class="menu__item"><a href="#">меню</a></li>
-                    <li class="menu__item"><a href="#">доствка</a></li>
-                    <li class="menu__item"><a href="#">контакты</a></li>
-                    <li class="menu__item"><a href="#">акции</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="social-networks">
-            <a href="#" class="social-networks__item">
-                <i class="fa-solid fa-phone"></i>
-                <span class="phone-number">+38 (050) 123 45 67</span>
-            </a>
-            <a href="#" class="social-networks__item">
-                <i class="fa-brands fa-instagram-square"></i>
-            </a>
-            <a href="#" class="social-networks__item">
-                <i class="fa-brands fa-facebook-square"></i>
+            <div class="social-networks">
+                <a href="#" class="social-networks__item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="phone-number">+38 (050) 123 45 67</span>
+                </a>
+                <a href="#" class="social-networks__item">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+                <a href="#" class="social-networks__item">
+                    <i class="fa-brands fa-facebook-square"></i>
 
-            </a>
-            <a href="#" class="social-networks__item">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-        </div>
-        <i class="fa-solid fa-bars"></i>
-    </header>
-    <section class="hero-page">
-        <h1 class="hero-page__title">Попробуй лучшую <span class="hero-page__title--georgian">грузинскую</span> кухню в
-            Киеве.</h1>
-        <p class="hero-page__text">В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам
-            грузинской кухни.
-            Потрясающий вкус блюд перенесет
-            Вас к атмосферу невероятного Тбилисси не выходя из дома.
-        </p>
+                </a>
+                <a href="#" class="social-networks__item">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </header>
+        <section class="hero-page">
+            <h1 class="hero-page__title">Попробуй лучшую <span class="hero-page__title--georgian">грузинскую</span>
+                кухню в
+                Киеве.</h1>
+            <p class="hero-page__text">В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам
+                грузинской кухни.
+                Потрясающий вкус блюд перенесет
+                Вас к атмосферу невероятного Тбилисси не выходя из дома.
+            </p>
 
-        <button name="button" type="button" class="hero-page__btn">
-            Перейти к меню
-        </button>
+            <button name="button" type="button" class="hero-page__btn">
+                Перейти к меню
+            </button>
 
+        </section>
     </section>
+    <section class="taste">
+        <div class="tomato"></div>
+        <div class="taste__title intro">
+            <h3 class="intro__title">Попробуйте на вкус</h3>
+            <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus
+                urna hendrerit convallis aliquam consequat turpis.</p>
+        </div>
+        <div class="taste__meals meal">
+            <div class="meal__item">
+                <div class="meal__item-basil"></div>
+                <img src="image/meal3.png" alt="meal" class="meal__item-img">
+                <p class="meal__item-text">Здесь будет какой то текст, возможно назване блюда</p>
+            </div>
+            <div class="meal__item">
+                <img src="image/meal2.png" alt="meal" class="meal__item-img">
+                <p class="meal__item-text">Здесь будет какой то текст, возможно назване блюда</p>
+            </div>
+            <div class="meal__item">
+                <img src="image/meal3.png" alt="meal" class="meal__item-img">
+                <p class="meal__item-text">Здесь будет какой то текст, возможно назване блюда</p>
+            </div>
+        </div>
+        <button class="taste__btn btn">ПЕРЕЙТИ К ДОСТАВКЕ</button>
+        <div class="basil"></div>
+        <div class="onion"></div>
+    </section>
+    <section class="menu__section">
+        <div class="menu__section__arow-left">◀︎</div>
+        <div class="menu__section__arow-right">▶︎</div>
+        <div class="menu__title intro">
+            <h3 class="intro__title">Меню</h3>
+            <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus
+                urna hendrerit convallis aliquam consequat turpis.</p>
+        </div>
+
+        <div class="menu__section-wrapper">
+            <div class="menu__section__item section__item1">
+                <button class="menu__section__item-button">открыть меню</button>
+                <p class="menu__section__item-text menu__section__item-text_1">Салаты</p>
+            </div>
+            <div class="menu__section__item section__item2">
+                <button class="menu__section__item-button">открыть меню</button>
+                <p class="menu__section__item-text menu__section__item-text_2">Выпечка</p>
+            </div>
+            <div class="menu__section__item section__item3">
+                <button class="menu__section__item-button">открыть меню</button>
+                <p class="menu__section__item-text menu__section__item-text_3">Супы</p>
+            </div>
+            <div class="menu__section__item section__item4">
+                <button class="menu__section__item-button">открыть меню</button>
+                <p class="menu__section__item-text menu__section__item-text_4">Блюда на мангале</p>
+            </div>
+            <div class="menu__section__item section__item5">
+                <button class="menu__section__item-button">открыть меню</button>
+                <p class="menu__section__item-text menu__section__item-text_5">Горячие блюда</p>
+            </div>
+            <div class="menu__section__item section__item6">
+                <button class="menu__section__item-button">открыть меню</button>
+                <p class="menu__section__item-text menu__section__item-text_6">Соусы</p>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="section3__img--bazil"></div>
+        <div class="section3__title intro">
+            <h3 class="intro__title">Удобные способы доставки</h3>
+            <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus
+                urna hendrerit convallis aliquam consequat turpis.</p>
+        </div>
+        <div class="section3__wrapper">
+            <div class="section3__wrapper__left">
+                <div class="section3__wrapper__left-item">
+                    <img src="./image/section3_img-1.png" alt="">
+                    <span>Доставка при помощи наших курьеров при заказе от 2000 грн</span>
+                </div>
+                <div class="section3__wrapper__left-item">
+                    <img src="./image/section3_img-2.png" alt="">
+                    <span>Доставка при помощи сервиса по оставке еды и лальше по тексту</span>
+                </div>
+                <div class="section3__wrapper__left-item">
+                    <img src="./image/section3_img-3.png" alt="">
+                    <span>Доставка при помощи сервиса по оставке еды и лальше по тексту</span>
+                </div>
+            </div>
+            <div>
+                <img class="section3_img--big" src="./image/section3_img--big.png" alt="">
+            </div>
+
+        </div>
+        <div class="section3__bazil--big"></div>
+        <div class="section3__img-tomato--small"></div>
+    </section>
+    <section class="galery">
+        <div class="galery__wrapper">
+            <img class="galery__wrapper__img" src="./image/galery__img1.png" alt="">
+            <img class="galery__wrapper__img" src="./image/galery__img2.png" alt="">
+            <img class="galery__wrapper__img" src="./image/galery__img3.png" alt="">
+            <img class="galery__wrapper__img" src="./image/galery__img4.png" alt="">
+            <img class="galery__wrapper__img" src="./image/menu_botom2.jpeg" alt="">
+            <img class="galery__wrapper__img" src="./image/menu_botom3.png" alt="">
+            <img class="galery__wrapper__img" src="./image/menu_botom4.jpeg" alt="">
+            <img class="galery__wrapper__img" src="./image/menu_botom5.jpeg" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__first-row">
+            <img src="./image/header-logo.png" alt="">
+            <div class="footer__first-row__contact">
+                <span class="footer__first-row__contact__text">+38 (050) 456-99-98</span>
+                <img src="./image/footer-whats_up.svg" alt="">
+                <img src="./image/footer-telegram.png" alt="">
+                <img src="./image/footer-viber.png" alt="">
+            </div>
+            <span class="footer__first-row__text">г. Киев, район стадиона Динамо</span>
+            <span class="footer__first-row__text">Email: mail@mal.ru</span>
+        </div>
+        <div class="footer__second-row">
+            <div class="footer__second-row__agreement__wrapper">
+                <span class="footer__second-row__text">Политика конфиденциальности</span>
+                <span class="footer__second-row__text">Пользовательское соглашение</span>
+            </div>
+            <span class="footer__second-row__text">Динамо. Грузинское бистро. Все права защищены, 2021</span>
+        </div>
+    </footer>
 </body>
 
 </html>
